@@ -1,0 +1,9 @@
+{
+  "name": "wp-starter-plugin",
+  "version": "1.0.0",
+  "description": "A starter plugin for learning all the things.",
+  "main": "index.js",
+  "repository": "git@github.com:efuller/wp-starter-plugin.git",
+  "author": "Eric Fuller <info@glassmoonmedia.com>",
+  "license": "GPL-3.0+"
+}
