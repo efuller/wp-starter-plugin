@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: WP Starter Plugin
+* Plugin Name: WP Plugin
 * Plugin URI:  http://www.ericfuller.net
 * Description: A simple, starter plugin for all sorts of learning.
 * Version:     1.0.0
