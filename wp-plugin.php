@@ -18,6 +18,11 @@ if ( ! defined( 'WPINC' ) ) {
 require_once( 'class/class-bootstrap.php' );
 require_once( 'class/class-dependencies.php' );
 
+/**
+ * Bootstrap the plugin.
+ *
+ * @since 1.0.0
+ */
 function engage() {
 
 	// Kick things off.

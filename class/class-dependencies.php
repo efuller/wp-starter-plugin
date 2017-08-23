@@ -1,8 +1,19 @@
 <?php
 namespace WPSP;
 
+/**
+ * Class Dependencies.
+ *
+ * @package WPSP
+ * @since 1.0.0
+ */
 class Dependencies {
 
+	/**
+	 * Dependencies constructor.
+	 *
+	 * @since 1.0.0
+	 */
 	public function __construct() {
 		// Enqueue styles.
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
@@ -10,6 +21,11 @@ class Dependencies {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 	}
 
+	/**
+	 * Enqueue public styles.
+	 *
+	 * @since 1.0.0
+	 */
 	public function enqueue_styles() {
 		wp_enqueue_style(
 			'wp-starter-plugin-styles',
@@ -19,6 +35,11 @@ class Dependencies {
 		);
 	}
 
+	/**
+	 * Enqueue public scripts.
+	 *
+	 * @since 1.0.0
+	 */
 	public function enqueue_scripts() {
 		wp_enqueue_script(
 			'wp-starter-plugin-js',
