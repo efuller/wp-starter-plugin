@@ -2,7 +2,7 @@
 /**
 * Plugin Name: WP Plugin
 * Plugin URI:  http://www.ericfuller.net
-* Description: A simple, starter plugin for all sorts of learning.
+* Description: A starter plugin.
 * Version:     1.0.0
 * Author:      Eric Fuller
 * Author URI:  http://www.ericfuller.net
