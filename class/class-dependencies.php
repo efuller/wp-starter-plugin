@@ -1,4 +1,11 @@
 <?php
+/**
+ * Dependencies for the plugin.
+ *
+ * @package WPSP
+ * @since 1.0.0
+ */
+
 namespace WPSP;
 
 /**
@@ -10,7 +17,9 @@ namespace WPSP;
 class Dependencies {
 
 	/**
-	 * Dependencies constructor.
+	 * Constructor.
+	 *
+	 * Add scripts and styles.
 	 *
 	 * @since 1.0.0
 	 */

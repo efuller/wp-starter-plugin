@@ -1,16 +1,22 @@
 <?php
+/**
+ * Bootstrap for the plugin.
+ *
+ * @package WPSP
+ * @since 1.0.0
+ */
+
 namespace WPSP;
 
 /**
- * Bootstrap Class.
+ * Bootstrap Class
  *
- * @package WPSP
  * @since 1.0.0
  */
 class Bootstrap {
 
 	/**
-	 * Constructor
+	 * Constructor. Initialize the plugin.
 	 *
 	 * @since 1.0.0
 	 */
