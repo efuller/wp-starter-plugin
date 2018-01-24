@@ -61,4 +61,15 @@ class App {
 
 		return static::$registry[ $key ];
 	}
+
+	/**
+	 * Helper that returns the registered dependencies.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return array $registry Current dependencies.
+	 */
+	public function get_registry() {
+		return static::$registry;
+	}
 }
