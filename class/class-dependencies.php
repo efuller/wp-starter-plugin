@@ -38,9 +38,9 @@ class Dependencies {
 	public function enqueue_styles() {
 		wp_enqueue_style(
 			'wp-starter-plugin-styles',
-			plugins_url( 'wp-starter-plugin/assets/css/main.css' ),
+			App::get( 'plugin_url' ) . 'assets/css/main.css',
 			array(),
-			'0.1.0'
+			App::get( 'version' )
 		);
 	}
 
@@ -52,9 +52,9 @@ class Dependencies {
 	public function enqueue_scripts() {
 		wp_enqueue_script(
 			'wp-starter-plugin-js',
-			plugins_url( 'wp-starter-plugin/assets/js/main.js' ),
+			App::get( 'plugin_url' ) . 'assets/js/main.js',
 			array( 'jquery' ),
-			'0.1.0'
+			App::get( 'version' )
 		);
 	}
 }
