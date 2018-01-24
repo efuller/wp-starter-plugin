@@ -50,8 +50,8 @@ class Bootstrap {
 	 */
 	public function init() {
 		App::bind( 'version', self::VERSION );
-		App::bind( 'plugin_directory_url', plugin_dir_url( $this->plugin_file ) );
-		App::bind( 'plugin_directory_path', plugin_dir_path( $this->plugin_file ) );
+		App::bind( 'plugin_url', plugin_dir_url( $this->plugin_file ) );
+		App::bind( 'plugin_directory', plugin_dir_path( $this->plugin_file ) );
 		App::bind( 'basename', basename( dirname( $this->plugin_file ) ) );
 		App::bind( 'dependencies', new Dependencies() );
 	}
