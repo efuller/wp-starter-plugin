@@ -24,6 +24,6 @@ class Bootstrap {
 	 * @since 1.0.0
 	 */
 	public function init() {
-		new \WPSP\Dependencies();
+		App::bind( 'dependencies', new Dependencies() );
 	}
 }

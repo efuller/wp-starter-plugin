@@ -17,6 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
 // Require class files here.
 require_once( 'class/class-bootstrap.php' );
 require_once( 'class/class-dependencies.php' );
+require_once( 'class/class-app.php' );
 
 /**
  * Bootstrap the plugin.
