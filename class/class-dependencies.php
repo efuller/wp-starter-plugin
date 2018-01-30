@@ -24,6 +24,15 @@ class Dependencies {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
+		$this->hooks();
+	}
+
+	/**
+	 * Run hooks.
+	 *
+	 * @since 1.0.0
+	 */
+	public function hooks() {
 		// Enqueue styles.
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 		// Enqueue scripts.
