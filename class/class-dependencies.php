@@ -37,7 +37,7 @@ class Dependencies {
 	 */
 	public function enqueue_styles() {
 		wp_enqueue_style(
-			'wp-starter-plugin-styles',
+			App::get( 'basename' ) . '-style',
 			App::get( 'plugin_url' ) . 'assets/css/main.css',
 			array(),
 			App::get( 'version' )
@@ -51,7 +51,7 @@ class Dependencies {
 	 */
 	public function enqueue_scripts() {
 		wp_enqueue_script(
-			'wp-starter-plugin-js',
+			App::get( 'basename' ) . '-js',
 			App::get( 'plugin_url' ) . 'assets/js/main.js',
 			array( 'jquery' ),
 			App::get( 'version' )
