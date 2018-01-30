@@ -51,11 +51,11 @@ spl_autoload_register( 'wpsp_autoload_classes' );
  *
  * @since 1.0.0
  */
-function engage() {
+function wpsp_engage() {
 
 	// Kick things off.
 	new \WPSP\Bootstrap();
 }
 
 // Engage.
-engage();
+wpsp_engage();
