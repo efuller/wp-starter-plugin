@@ -60,5 +60,6 @@ class Bootstrap {
 		App::bind( 'plugin_directory', plugin_dir_path( $this->plugin_file ) );
 		App::bind( 'basename', basename( dirname( $this->plugin_file ) ) );
 		App::bind( 'dependencies', new Dependencies() );
+		App::get( 'dependencies' )->register_hooks();
 	}
 }

@@ -17,22 +17,11 @@ namespace WPSP;
 class Dependencies {
 
 	/**
-	 * Constructor.
-	 *
-	 * Add scripts and styles.
-	 *
-	 * @since 1.0.0
-	 */
-	public function __construct() {
-		$this->hooks();
-	}
-
-	/**
 	 * Run hooks.
 	 *
 	 * @since 1.0.0
 	 */
-	public function hooks() {
+	public function register_hooks() {
 		// Enqueue styles.
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 		// Enqueue scripts.
