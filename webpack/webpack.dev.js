@@ -18,7 +18,7 @@ const config = {
 			injectChanges: true,
 			host: 'localhost',
 			port: '3000',
-			proxy: 'learnwp.test'
+			proxy: 'hacker.local'
 		})
 	]
 };
