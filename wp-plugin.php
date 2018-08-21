@@ -1,13 +1,13 @@
 <?php
 /**
-* Plugin Name: WP Plugin
-* Plugin URI:  http://www.ericfuller.net
-* Description: A starter plugin.
-* Version:     1.0.0
-* Author:      Eric Fuller
-* Author URI:  http://www.ericfuller.net
-* License:     GPL-3.0+
-*/
+ * Plugin Name: WP Plugin
+ * Plugin URI:  http://www.ericfuller.net
+ * Description: A starter plugin.
+ * Version:     1.0.0
+ * Author:      Eric Fuller
+ * Author URI:  http://www.ericfuller.net
+ * License:     GPL-3.0+
+ */
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -54,7 +54,8 @@ spl_autoload_register( 'wpsp_autoload_classes' );
 function wpsp_engage() {
 
 	// Kick things off.
-	new \WPSP\Bootstrap();
+	$bootstrap = new \WPSP\Bootstrap();
+	$bootstrap->register_hooks();
 }
 
 // Engage.

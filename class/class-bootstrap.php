@@ -37,10 +37,16 @@ class Bootstrap {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
-
 		$this->plugin_file = dirname( __FILE__ );
+	}
 
-		add_action( 'init', array( $this, 'init' ) );
+	/**
+	 * Register hooks.
+	 *
+	 * @since 1.0.0
+	 */
+	public function register_hooks() {
+		add_action( 'plugins_loaded', array( $this, 'init' ) );
 	}
 
 	/**
