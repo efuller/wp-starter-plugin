@@ -24,6 +24,8 @@ class Dependencies {
 	public function register_hooks() {
 		// Enqueue styles.
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
+		// Enqueue admin styles.
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_styles' ) );
 		// Enqueue scripts.
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 		// Enqueue admin scripts.
@@ -53,6 +55,20 @@ class Dependencies {
 		wp_enqueue_style(
 			App::get( 'basename' ) . '-style',
 			App::get( 'plugin_url' ) . 'assets/css/main.css',
+			array(),
+			App::get( 'version' )
+		);
+	}
+
+	/**
+	 * Enqueue admin styles.
+	 *
+	 * @since 1.0.0
+	 */
+	public function enqueue_admin_styles() {
+		wp_enqueue_style(
+			App::get( 'basename' ) . 'admin-style',
+			App::get( 'plugin_url' ) . 'assets/css/admin.css',
 			array(),
 			App::get( 'version' )
 		);
