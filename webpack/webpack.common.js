@@ -9,7 +9,7 @@ const config = {
 		admin: './src/admin/index.js'
 	},
 	output: {
-		filename: '[name].js',
+		filename: 'js/[name].js',
 		path: commonPaths.outputPath
 	},
 	module: {
@@ -42,7 +42,13 @@ const config = {
 		]
 	},
 	plugins: [
-		new ProgressBar()
+		new ProgressBar(),
+		new ExtractTextPlugin({
+			filename: (getPath) => {
+				return getPath('js/css/[name].css').replace('js/css', 'css');
+			},
+			allChunks: true
+		})
 	]
 };
 
