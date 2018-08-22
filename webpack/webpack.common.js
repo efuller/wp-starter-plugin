@@ -4,9 +4,12 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
 
-	entry: './src/',
+	entry: {
+		main: './src/front/index.js',
+		admin: './src/admin/index.js'
+	},
 	output: {
-		filename: 'main.js',
+		filename: '[name].js',
 		path: commonPaths.outputPath
 	},
 	module: {
