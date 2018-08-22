@@ -26,6 +26,22 @@ class Dependencies {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 		// Enqueue scripts.
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		// Enqueue admin scripts.
+		add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
+	}
+
+	/**
+	 * Enqueue admin scripts.
+	 *
+	 * @since 1.0.0
+	 */
+	public function admin_scripts() {
+		wp_enqueue_script(
+			App::get( 'basename' ) . 'admin-js',
+			App::get( 'plugin_url' ) . 'assets/js/admin.js',
+			array( 'jquery' ),
+			App::get( 'version' )
+		);
 	}
 
 	/**
