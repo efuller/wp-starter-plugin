@@ -3,6 +3,7 @@ const BrowserSyncPlugin = require( 'browser-sync-webpack-plugin' );
 const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
 
 const config = {
+	mode: 'development',
 	devtool: 'eval-source-map',
 	devServer: {
 		historyApiFallback: true,

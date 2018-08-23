@@ -22,12 +22,13 @@
     "browser-sync-webpack-plugin": "^1.2.0",
     "css-loader": "^0.28.5",
     "eslint-config-wordpress": "^2.0.0",
-    "extract-text-webpack-plugin": "^3.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass": "^4.5.3",
     "progress-bar-webpack-plugin": "^1.10.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "webpack": "^3.5.5",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
     "webpack-merge": "^4.1.0"
   }
 }
