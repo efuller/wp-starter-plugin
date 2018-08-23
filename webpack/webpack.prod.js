@@ -13,7 +13,7 @@ const config = {
 			}
 		}),
 		// Extract the CSS file.
-		new ExtractTextPlugin( '../css/main.css' ),
+		new ExtractTextPlugin( 'css/main.css' ),
 
 		// Configure autoprefixer.
 		new webpack.LoaderOptionsPlugin({
